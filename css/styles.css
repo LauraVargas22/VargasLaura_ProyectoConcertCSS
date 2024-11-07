@@ -65,13 +65,84 @@ header {
 .title {
     display: flex;
     flex-direction: column;
-    padding: 20px 50px; 
+    padding: 20px 40px; 
     font-size: 2rem;
+    width: 70%;
 }
 
 .title2 {
     color: #761CBC;
 }
+
+/*Estilos menú de categorias */
+.barra {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    margin-left: 2%;
+    overflow-x: scroll;
+    overflow: hidden;
+
+    & > .barra__item {
+        flex: 1;
+        min-width: fit-content;
+        margin: 15px;
+    }
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px;
+}
+a:nth-child(1) {
+    background-color: #EDE9FF;
+}
+
+a:nth-child(2) {
+    background-color: #FFF5D7;
+}
+
+a:nth-child(3) {
+    background-color: #FFECEC;
+}
+
+a:last-child {
+    background-color: #E4FFEA;
+}
+
+a:hover {
+    font-weight: 600;
+    border: 2px double black;
+}
+
+/*Estilos Trending Events */
+.trending {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5%;
+
+}
+
+.trending h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.trending h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: grey;
+}
+
+/* Estilos Card Trending Events */
 
 
 @media (max-width: 768px) {
