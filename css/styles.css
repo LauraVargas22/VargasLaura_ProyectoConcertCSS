@@ -128,7 +128,6 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     margin: 5%;
-
 }
 
 .trending h2 {
@@ -143,11 +142,73 @@ a:hover {
 }
 
 /* Estilos Card Trending Events */
+.events{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin-left: 2%;
+    overflow-x: scroll;
+    overflow: hidden;
 
-
-@media (max-width: 768px) {
+    & > .events__item {
+        flex: 1;
+        min-width: 45%;
+        background-color: #EDE9FF;
+        margin: 0 5px;
+    }
 }
 
-@media (min-width: 1024px) {
-    
+/*Estilos Events Near You */
+.nearyou {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.nearyou h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.nearyou h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: grey;
+}
+
+h3:hover {
+    color: #761CBC;
+}
+
+/*Estilos cards Events Near You */
+.eventNear{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+    margin-left: 2%;
+    overflow-x: scroll;
+    overflow: hidden;
+
+    & > .eventNear__item {
+        flex: 1;
+        min-width: 40%;
+        background-color: white;
+        border-radius: 10px;
+        margin: 0 5px;
+    }
+}
+
+
+.events__images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-start;
+    position: relative;
+    left: 3rem;
+    height: 200px;
+    padding: 20px;
+    border-radius: 15px;
 }
