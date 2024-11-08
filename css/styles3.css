@@ -1,0 +1,85 @@
+/* Estilos Card Trending Events */
+.events {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 35vh;
+    margin-left: 2%;
+    overflow-x: scroll;
+
+    & > .events__item {
+        flex: 1;
+        min-width: fit-content;
+        margin: 15px;
+    }
+}
+
+.events__image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+/*Estilos texto Trending Events*/
+.image__info {
+    background-color: rgb(184, 112, 156, 0.5);
+    padding: 10px;
+    border-radius: 15px;
+    z-index: 1;
+    position: relative;
+    top: -7.2rem;
+    left: 0.625rem;
+    height: 6.25rem;
+    width: 24.2rem;
+    margin-left: 1rem;
+}
+
+.image__info--image2 {
+    background-color: rgba(214, 70, 70, 0.5);
+    padding: 10px;
+    border-radius: 15px;
+    z-index: 1;
+    position: relative;
+    top: -7.2rem;
+    left: 0.625rem;
+    height: 6.25rem;
+    width: 24.2rem;
+    margin-left: 1.8rem;
+}
+
+.image__info--image3 {
+    background-color: rgba(235, 135, 88, 0.5);
+    padding: 10px;
+    border-radius: 15px;
+    z-index: 1;
+    position: relative;
+    top: -7.2rem;
+    left: 0.625rem;
+    height: 6.25rem;
+    width: 24.2rem;
+}
+.image__info--price {
+    position: relative;
+    left: 15.5rem;
+    top: -1.8rem;    
+}
+.title__info {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.text__info {
+    font-weight: 400;
+}
+.title__info--price {
+    font-weight: 500;
+    font-size: 0.90rem;
+}
+.text__info--price {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
