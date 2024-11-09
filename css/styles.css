@@ -10,6 +10,15 @@ body {
     background: #D9D9D9;
     font-family: "Inter", sans-serif;
 }
+
+body::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(#42275a, #734b6d);
+    border-radius: 1rem;
+}
 /*Estilos del header (botón de notificaciones)*/
 header {
     margin: 2rem;
@@ -64,10 +73,9 @@ header {
 
 .title {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     padding: 20px 40px; 
-    font-size: clamp(1rem, -3.5rem + 9.375vw, 2.5rem);
-    width: 70%;
+    font-size: clamp(1.2rem, -3.6rem + 10vw, 2.8rem);
 }
 
 .title2 {
@@ -89,7 +97,11 @@ header {
     }
 }
 
-a {
+.barra::-webkit-scrollbar {
+    display: none;
+}
+
+.barra__item {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -100,23 +112,23 @@ a {
     border-radius: 30px;
     padding: 10px;
 }
-a:nth-child(1) {
+.barra__item:nth-child(1) {
     background-color: #EDE9FF;
 }
 
-a:nth-child(2) {
+.barra__item:nth-child(2) {
     background-color: #FFF5D7;
 }
 
-a:nth-child(3) {
+.barra__item:nth-child(3) {
     background-color: #FFECEC;
 }
 
-a:last-child {
+.barra__item:last-child {
     background-color: #E4FFEA;
 }
 
-a:hover {
+.barra__item:hover {
     font-weight: 600;
     border: 2px double black;
     cursor: pointer;
@@ -146,7 +158,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 3%;
+    margin: 2rem;
 }
 
 .nearyou h2 {
@@ -169,18 +181,23 @@ h3:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: max-content;
-    margin-left: 2%;
+    height: fit-content;
+    margin: 2rem;
     overflow-x: scroll;
 
     & > .eventNear__item {
         flex: 1;
-        width: 60vw;
+        width: max-content;
+        justify-content: center;
         background: white;
         box-shadow: 2px 2px 4px 0 rgba(20,20,20,0.3);
         border-radius: 0.6rem;
-        margin: 1rem;
+        margin: 0.5rem;
     }
+}
+
+.eventNear::-webkit-scrollbar {
+    display: none;
 }
 
 .events__images {
@@ -189,20 +206,34 @@ h3:hover {
     justify-content: center;
     align-self: flex-start;
     position: relative;
-    width: 50vw;
-    padding: 2vh 5vw;
-    border-radius: 15px;
+    width: 60vw;
+    padding: 1rem;
+    border-radius: 2rem;
 }
 
 /*Texto Cards Events Near You*/
 .event__info {
-    padding: 2vw 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 1.5rem;
+    line-height: 1.5;
 }
 
 .text__event {
     color: black;
     line-height: 1.5;
+    text-decoration: none;
+    font-weight: 600;
     font-size: clamp(1.3rem, -0.8rem + 4.375vw, 2rem);
+}
+
+.text__event:hover {
+    cursor: pointer;
+    color: white;
+    background: black;
+    border-radius: 5px;
 }
 
 .text__event--p {
@@ -221,10 +252,5 @@ h3:hover {
 }
 
 @media (min-width: 1024px) {
-    .eventNear {
-        overflow-x: scroll;
-    }
-    .barra {
-        overflow-x: hidden;
-    }
+
 }
