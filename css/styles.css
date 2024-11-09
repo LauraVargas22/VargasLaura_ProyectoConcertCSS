@@ -12,7 +12,7 @@ body {
 }
 /*Estilos del header (botón de notificaciones)*/
 header {
-    margin: 30px;
+    margin: 2rem;
 }
 
 .header__bottom {
@@ -27,8 +27,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    height: 3rem;
     color: #333333;
     background: #dddddd;
     border: none;
@@ -48,10 +48,10 @@ header {
   
 .icon-button__badge {
     position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 25px;
-    height: 25px;
+    top: -0.625rem;
+    right: -0.625rem;
+    width: 1.6rem;
+    height: 1.6rem;
     background: red;
     color: #ffffff;
     display: flex;
@@ -66,7 +66,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 20px 40px; 
-    font-size: 2rem;
+    font-size: clamp(1rem, -3.5rem + 9.375vw, 2.5rem);
     width: 70%;
 }
 
@@ -78,14 +78,14 @@ header {
 .barra {
     display: flex;
     flex-direction: row;
-    height: 100px;
+    height: 6.25rem;
     margin-left: 2%;
     overflow-x: scroll;
 
     & > .barra__item {
         flex: 1;
         min-width: fit-content;
-        margin: 15px;
+        margin: 0.9rem;
     }
 }
 
@@ -95,7 +95,7 @@ a {
     justify-content: center;
     align-items: center;
     color: black;
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, -1.2rem + 5vw, 2rem);
     text-decoration: none;
     border-radius: 30px;
     padding: 10px;
@@ -132,12 +132,12 @@ a:hover {
 
 .trending h2 {
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: clamp(1.5rem, -1.5rem + 6.25vw, 2.5rem);
 }
 
 .trending h3 {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, -1.8rem + 6.25vw, 2.2rem);
     color: grey;
 }
 
@@ -151,12 +151,12 @@ a:hover {
 
 .nearyou h2 {
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: clamp(1.5rem, -1.5rem + 6.25vw, 2.5rem);
 }
 
 .nearyou h3 {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, -1.8rem + 6.25vw, 2.2rem);
     color: grey;
 }
 
@@ -168,18 +168,18 @@ h3:hover {
 .eventNear{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    height: 300px;
+    justify-content: space-between;
+    height: max-content;
     margin-left: 2%;
     overflow-x: scroll;
-    overflow: hidden;
 
     & > .eventNear__item {
         flex: 1;
-        min-width: 40%;
-        background-color: white;
-        border-radius: 10px;
-        margin: 0 5px;
+        width: 60vw;
+        background: white;
+        box-shadow: 2px 2px 4px 0 rgba(20,20,20,0.3);
+        border-radius: 0.6rem;
+        margin: 1rem;
     }
 }
 
@@ -189,8 +189,42 @@ h3:hover {
     justify-content: center;
     align-self: flex-start;
     position: relative;
-    left: 3rem;
-    height: 200px;
-    padding: 20px;
+    width: 50vw;
+    padding: 2vh 5vw;
     border-radius: 15px;
+}
+
+/*Texto Cards Events Near You*/
+.event__info {
+    padding: 2vw 5vw;
+}
+
+.text__event {
+    color: black;
+    line-height: 1.5;
+    font-size: clamp(1.3rem, -0.8rem + 4.375vw, 2rem);
+}
+
+.text__event--p {
+    color: black;
+    line-height: 1.5;
+    font-size: clamp(1rem, -0.5rem + 3.125vw, 1.5rem);
+}
+
+.text__event--price {
+    color: red;
+    font-weight: 600;
+    font-size: clamp(1.2rem, -0.6rem + 3.75vw, 1.8rem);
+}
+
+@media (max-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+    .eventNear {
+        overflow-x: scroll;
+    }
+    .barra {
+        overflow-x: hidden;
+    }
 }
