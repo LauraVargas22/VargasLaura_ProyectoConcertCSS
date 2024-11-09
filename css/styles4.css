@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: "Inter", sans-serif;
+}
+
+.header__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 1rem;
+}
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    background: rgb(243, 210, 243,0.3);
+    border: none;
+    outline: none;
+    border-radius: 0.7rem;
+}
+
+.icon-button:hover {
+    cursor: pointer;
+    color: rgb(60, 16, 67);
+    background: rgb(243, 210, 243,0.3);
+}
+
+.info__profile {
+    display: flex;
+    flex-flow: row nowrap;
+    z-index: inherit;
+    padding: 1rem;
+}
+
+.profile1 {
+    width: 4rem;
+    height: 4rem;
+    z-index: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.profile2 {
+    width: 4rem;
+    height: 4rem;
+    z-index: 2;
+    position: relative;
+    left: -1rem;
+}
+
+.profile3 {
+    width: 4rem;
+    height: 4rem;
+    z-index: 3;
+    position: relative;
+    left: -2rem;
+}
+
+.image__text {
+    background: white;
+    position: relative;
+    line-height: 1.5;
+    top: -4rem;
+    margin: 0 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 4px 0px rgba(20,20,20, 0.3);
+}
+
+.title__text {
+    color: black;
+    font-weight: 600;
+    font-size: clamp(1.5rem, -0.75rem + 4.6875vw, 3rem);
+}
+
+.title__text::after {
+    content: "Music of the Spheres";
+    color: #761CBC;
+}
+
+.text__info {
+    color: black;
+    font-weight: 500;
+    font-size: clamp(1.2rem, 0.5778rem + 1.7778vw, 2rem);
+}
+
+.image__text--follow {
+    position: relative;
+    left: 50vw;
+    top: -4rem;
+}
+
+.description__title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 1rem;
+    color: black;
+    font-weight: 600;
+    font-size: clamp(1.5rem, -0.75rem + 4.6875vw, 3rem);
+}
+
+.description__text {
+    color: black;
+    font-weight: 400;
+    font-size: clamp(1.2rem, 0.5778rem + 1.7778vw, 2rem);
+    margin: 0 2rem;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+    max-height: 10rem;
+}
+
+.description__text:hover {
+    max-height: none;
+    overflow: visible;
+}
+
+.read__more {
+    display: flex;
+    color: rgb(47, 47, 122);
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 2rem;
+    font-size: clamp(1.2rem, 0.5778rem + 1.7778vw, 2rem);
+    width: 100%;
+    padding: 0.9rem 0;
+    cursor: pointer;
+}
+
+.description {
+    max-height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
