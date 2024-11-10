@@ -7,11 +7,9 @@
 }
 
 body {
-    background: linear-gradient(rgba(240,157,229,1), rgba(135,78,229,1));
-    width: 100vw;
-    height: 100vh;
+    background: linear-gradient(to bottom, #f09ee5 0%, #874ee5 100%);
+    background-attachment: fixed;
     font-family: "Inter", sans-serif;
-    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -21,6 +19,9 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     background: linear-gradient(#42275a, #734b6d);
     border-radius: 1rem;
+}
+header {
+    height: 5vh;
 }
 
 .header__bottom {
@@ -59,7 +60,6 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     height: fit-content;
     margin: 2rem;
-    width: 80vw;
     overflow-x: scroll;
 
     & > .ticket__item {
@@ -78,19 +78,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 .img__ticket {
+    border-radius: 70px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-self: stretch;
-    padding: 2rem 1rem;
-    border-radius: 5%;
+    align-self: flex-start;
+    width: 80vw;
+    padding: 2rem 2rem 1rem 2rem;
 }
 
 .ticket__title {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     justify-content: flex-start;
-    padding: 1.5rem;
+    padding: 1.5rem 2.5rem 1rem 2.5rem;
+    line-height: 1;
+    border-bottom: 2px solid gainsboro;
 }
 
 .title__ticket {
@@ -103,5 +106,39 @@ body::-webkit-scrollbar-thumb {
     color: gray;
     font-weight: 500;
     font-size: clamp(1.2rem, 0.5778rem + 1.7778vw, 2rem);
+}
+.body {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px dashed gainsboro;
+}
+.body__ticket {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 0 1rem 2rem;
+    line-height: 1.2;
+    width: 50%;
+}
+
+.body__ticket--right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+    padding: 2rem 0;
+    width: 50%;
+}
+
+.subtitle__body {
+    font-size: clamp(1.2rem, 0.9467rem + 1.0667vw, 1.8rem);
+    font-weight: 600;
+    color: #6e6b6b;
+}
+
+.text__body {
+    font-size: clamp(1.4rem, 1.0622rem + 1.4222vw, 2.2rem);
+    font-weight: 600;
+    padding-bottom: 2rem;
 }
 

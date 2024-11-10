@@ -247,10 +247,3 @@ h3:hover {
     font-weight: 600;
     font-size: clamp(1.2rem, -0.6rem + 3.75vw, 1.8rem);
 }
-
-@media (max-width: 768px) {
-}
-
-@media (min-width: 1024px) {
-
-}
