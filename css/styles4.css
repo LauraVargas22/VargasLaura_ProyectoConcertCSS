@@ -111,6 +111,11 @@ body::-webkit-scrollbar-thumb {
     color: #761CBC;
 }
 
+.title__text2::after {
+    content: "Will of the People";
+    color: #761CBC;
+}
+
 .text__info {
     color: black;
     font-weight: 500;
