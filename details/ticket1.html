@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles5.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back_ios"/>
+    <script src="../barcode/JsBarcode.all.min.js"></script>
     <title>Tickets Concert</title>
 </head>
 <body>
@@ -40,6 +41,10 @@
                     <p class="text__body">West B</p>
                 </div>
             </div>
+            <div class="barra__ticket">
+                <svg id="barcode"></svg>
+                <p class="text__barcode">Scan your barcode at the the entry gate.</p>
+            </div>
         </div>
         <div id="section2" class="ticket__item">
             <img class="img__ticket" src="../images/ticket2.png">
@@ -64,6 +69,10 @@
                     <h3 class="subtitle__body">Seat</h3>
                     <p class="text__body">West B</p>
                 </div>
+            </div>
+            <div class="barra__ticket">
+                <svg id="barcode"></svg>
+                <p class="text__barcode">Scan your barcode at the the entry gate.</p>
             </div>
         </div>
         <div id="section3" class="ticket__item">
@@ -90,7 +99,21 @@
                     <p class="text__body">West B</p>
                 </div>
             </div>
+            <div class="barra__ticket">
+                <svg id="barcode"></svg>
+                <p class="text__barcode">Scan your barcode at the the entry gate.</p>
+            </div>
         </div>
     </div>
 </body>
 </html>
+
+<script type="text/javascript">
+    JsBarcode("#barcode", "123461234", {
+        format: "codabar",
+        lineColor: "#000000",
+        width: 4,
+        height: 40,
+        displayValue: false,
+    });
+</script>

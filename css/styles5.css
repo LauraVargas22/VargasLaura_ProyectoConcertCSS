@@ -142,3 +142,18 @@ header {
     padding-bottom: 2rem;
 }
 
+.barra__ticket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text__barcode {
+    font-size: clamp(1.2rem, 0.9467rem + 1.0667vw, 1.8rem);
+    font-weight: 600;
+    color: #6e6b6b;
+}
+

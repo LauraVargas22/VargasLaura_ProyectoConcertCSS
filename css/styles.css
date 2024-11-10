@@ -237,7 +237,7 @@ h3:hover {
 }
 
 .text__event--p {
-    color: black;
+    color: #000000;
     line-height: 1.5;
     font-size: clamp(1rem, -0.5rem + 3.125vw, 1.5rem);
 }
