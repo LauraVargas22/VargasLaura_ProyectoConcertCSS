@@ -1,7 +1,7 @@
 # MUSIC CONCERT
 ## Descripción:
 Este proyecto consiste en el desarrollo de una aplicación de eventos de música que permite a los usuarios conocer algunos eventos musicales, visualizando información detallada sobre ellos, para así poder acceder a los tickets de cada uno de los eventos. El proyecto se puede visualizar a través del siguiente link: 
-
+https://musicconcerts.netlify.app/
 Para la elaboración de este proyecto se tuvo en en cuenta el diseño propuesto en figma https://www.figma.com/community/file/1243768936820156796/evento-event-mobile-app, así mismo como los siguientes requerimientos:
 - La aplicación debe ser completamente navegable y responsiva, con un diseño visual atractivo y consistente. Las secciones principales deben permitir al usuario buscar (simulado con redirecciones) eventos, ver detalles, y realizar la compra de entradas sin problemas.
 - Estructura clara del proyecto, con código bien comentado y fácil de entender, siguiendo buenas prácticas de HTML, CSS y JavaScript. La lógica debe estar bien modularizada.
@@ -12,6 +12,7 @@ De acuerdo con lo anterior, en primer lugar se desarrolló un cover de la aplica
 ```
 <a class="button__start" href="/index.html">Start</a>
 ```
+![alt text](./images/image1.png)
 ### Home
 En home se puede encontrar en primer lugar un botón de notificaciones, para lo cual se implementó el siguiente código: https://codepen.io/dcode-software/pen/KKgpKog, el cual se adaptó al diseño realizando cambios en la posición del mismo dentro de la página, dicho botón se importó desde google fonts.
 
@@ -33,7 +34,7 @@ const SearchList = [
     "One Direction",
 ];
 ```
-
+![alt text](./images/image2.png)
 Para el menú de categorías, las cartas de eventos en tendencia y eventos cerca de usted se usó como guía el siguiente carrusel https://codepen.io/jruel/pen/zYYgKGX cambiando la información dentro de cada una de las partes de esta manera:
 ```
 .barra {
@@ -69,6 +70,7 @@ Cada uno de los títulos de las cartas de presentación tiene el respectivo redi
 ```
 <a class="title__info" href="details/event1.html">Coldplay: Music of the Spheres</a>
 ```
+![alt text](./images/image3.png)
 ### Details:
 Se aplicó el diseño a las páginas de details, teniendo en cuenta que se tenía un botón de regreso superior el cual redirecciona al usuario a la página principal, esto se realizó por medio del siguiente código:
 ```
@@ -88,7 +90,7 @@ En esta página se puso como header una imagen acorde al evento, y un cuadro de 
 ```
 Esto con el fin que visualice de la siguiente manera:
 ![alt text](/images/image.png)
-
+![alt text](/images/image4.png)
 En cada uno de los eventos se encuentra un texto descriptivo el cual tiene un botón de Read More… , donde al hacer hover en la descripción despliega el texto que se encuentra oculto eliminando la altura:
 ```
   .description__text {
@@ -112,6 +114,8 @@ Así mismo, cuenta con un botón de redireccionamiento a la página tickets a la
 ```
 <a class="ticket" href="./ticket1.html#section2">Buy Ticket</a>
 ```
+![alt text](./images/image5.png)
+### Tickets:
 En la página de tickets, encontramos un carrusel con los tickets de cada uno de los eventos, los cuales cuentan con imagen descriptiva del evento y algunos datos relevantes sobre el evento, en la parte inferior se puede encontrar un código de barras realizado con JavaScript usando JsBarcode
 https://parzibyte.me/blog/2019/08/19/codigos-barras-javascript-jsbarcode/
 En este caso se seleccionó el método de SVG de esta manera:
@@ -135,7 +139,7 @@ Posteriormente, se modificó el diseño del código de barras:
     });
 </script>
 ```
-
+![alt text](./images/image6.png)
 Por medio de este proyecto se hizo uso de HTML y CSS puro, así mismo se implementó JavaScript.
 
 
