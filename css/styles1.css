@@ -9,6 +9,16 @@ body {
     background: linear-gradient(300deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     background-attachment: fixed;
     font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(#42275a, #734b6d);
+    border-radius: 1rem;
 }
 
 .body {
@@ -24,12 +34,14 @@ body {
 }
 
 .title {
+    justify-content: flex-start;
     color: #761CBC;
     font-size: clamp(2rem, 1.1556rem + 3.5556vw, 4rem);
     padding: 10vh 0 0 7vw;
 }
 
 .button__start {
+    justify-content: flex-end;
     font-size: clamp(1.5rem, 1.0778rem + 1.7778vw, 2.5rem);
     font-weight: 500;
     text-decoration: none;
@@ -41,4 +53,26 @@ body {
     position: absolute;
     bottom: 10vh;
     left: 10vw;
+}
+
+.body__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+    .body__image {
+        width: 50%;
+        height: 100vh;
+    }
+}
+@media (max-width: 768px) {
+    .body__image {
+        z-index: -2;
+        height: 100vh;
+        width: 200vw;
+    }
 }
