@@ -5,13 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Estilos body*/
 body {
     background: linear-gradient(to bottom, #f09ee5 0%, #874ee5 100%);
     background-attachment: fixed;
     font-family: "Inter", sans-serif;
 }
-
+/* Estilos scrollbar*/
 body::-webkit-scrollbar {
     width: 0.3rem;
 }
@@ -20,10 +20,11 @@ body::-webkit-scrollbar-thumb {
     background: linear-gradient(#42275a, #734b6d);
     border-radius: 1rem;
 }
+/*Estilos header*/
 header {
     height: 5vh;
 }
-
+/*Estilos del header (botón de redireccionamiento index)*/
 .header__bottom {
     display: flex;
     flex-direction: row;
@@ -47,13 +48,13 @@ header {
     outline: none;
     border-radius: 0.7rem;
 }
-
+/*Estilos al pasar por los botones*/
 .icon-button:hover {
     cursor: pointer;
     color: rgb(60, 16, 67);
     background: rgb(243, 210, 243,0.3);
 }
-
+/* Estilos carrusel tickets*/
 .tickets{
     display: flex;
     flex-direction: row;
@@ -62,7 +63,7 @@ header {
     margin: 2rem;
     overflow-x: scroll;
 
-    & > .ticket__item {
+    & > .ticket__item { /*Estilos de cada ticket*/
         flex: 1;
         width: max-content;
         justify-content: center;
@@ -73,10 +74,11 @@ header {
     }
 }
 
+/*Scrollbar de Trending Cards*/
 .tickets::-webkit-scrollbar {
     display: none;
 }
-
+/*Estilos de las imágenes en los tickets*/
 .img__ticket {
     border-radius: 70px;
     display: flex;
@@ -85,7 +87,7 @@ header {
     width: 80vw;
     padding: 2rem 2rem 1rem 2rem;
 }
-
+/*Estilos texto tickets*/
 .ticket__title {
     display: flex;
     flex-flow: column;
@@ -106,11 +108,13 @@ header {
     font-weight: 500;
     font-size: clamp(1.2rem, 0.5778rem + 1.7778vw, 2rem);
 }
+/*Estilos información ticket*/
 .body {
     display: flex;
     flex-direction: row;
     border-bottom: 2px dashed gainsboro;
 }
+/*Estilos información ticket alineado a la izquierda*/
 .body__ticket {
     display: flex;
     flex-direction: column;
@@ -119,7 +123,7 @@ header {
     line-height: 1.2;
     width: 50%;
 }
-
+/*Estilos información ticket alineado a la derecha*/
 .body__ticket--right {
     display: flex;
     flex-direction: column;
@@ -140,7 +144,7 @@ header {
     font-weight: 600;
     padding-bottom: 2rem;
 }
-
+/*Estilos código de barras*/
 .barra__ticket {
     display: flex;
     flex-direction: column;
@@ -149,7 +153,7 @@ header {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
-
+/*Estilos texto inferior código de barras*/
 .text__barcode {
     font-size: clamp(1.2rem, 0.9467rem + 1.0667vw, 1.8rem);
     font-weight: 600;

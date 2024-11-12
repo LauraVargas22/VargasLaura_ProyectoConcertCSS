@@ -8,17 +8,17 @@
     margin-left: 0.5rem;
     overflow-x: auto;
 
-    & > .events__item {
+    & > .events__item { /*Estilos de cada item de cards Trending Events*/
         flex: 0 0 auto;
         min-width: max-content;
         margin: 1rem;
     }
 }
-
+/*Scrollbar de Trending Cards*/
 .events::-webkit-scrollbar {
     display: none;
 }
-
+/*Estilos de las imágenes en las cartas Trending Events*/
 .events__image {
     display: flex;
     flex-direction: row;
@@ -32,7 +32,7 @@
 
 /*Estilos texto Trending Events*/
 .image__info {
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); /*Efecto de filtro a cuadro de texto*/
     padding: 0.625rem;
     border-radius: 15px;
     z-index: 1;
@@ -45,7 +45,7 @@
     width: 90%;
     line-height: 1.5;
 }
-
+/*Posición cuadro de texto precio evento*/
 .image__info--price {
     position: relative;
     left: 70%;
@@ -55,7 +55,7 @@
     color: white;
     text-decoration: none;
     font-weight: 600;
-    font-size: clamp(1.3rem, 0.7rem + 1.25vw, 1.5rem);
+    font-size: clamp(1.3rem, 0.7rem + 1.25vw, 1.5rem); /*Letra responsiva*/
 }
 
 .title__info:hover{
@@ -66,13 +66,13 @@
 }
 .text__info {
     font-weight: 400;
-    font-size: clamp(1rem, 0.4rem + 1.25vw, 1.2rem);
+    font-size: clamp(1rem, 0.4rem + 1.25vw, 1.2rem); /*Letra responsiva*/
 }
 .title__info--price {
     font-weight: 500;
-    font-size: clamp(0.9rem, 0.6rem + 0.625vw, 1rem);
+    font-size: clamp(0.9rem, 0.6rem + 0.625vw, 1rem); /*Letra responsiva*/
 }
 .text__info--price {
     font-weight: 700;
-    font-size: clamp(1.2rem, 0.9rem + 0.625vw, 1.3rem);
+    font-size: clamp(1.2rem, 0.9rem + 0.625vw, 1.3rem); /*Letra responsiva*/
 }

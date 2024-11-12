@@ -1,10 +1,11 @@
+/*Definición de variables barra de búsqueda*/
 :root {
     --bg: #F0F0F0;
     --input-bg: white;
     --text: #27292B;
     --item-hover: #f6f6f6;
 }
-
+/*Estilos barra de búsqueda*/
 .search-box {
     margin-top: 1rem;
     margin-left: 2rem;
@@ -21,14 +22,14 @@
     display: flex;
     align-items: center;
 }
-
+/*Estilos iconos barra de búsqueda*/
 button {
     background: transparent;
     border: 0;
     outline: 0;
     padding: 0.5rem;
 }
-
+/*Estilos entrada de texto barra de búsqueda*/
 input {
     flex: 1;
     max-height: 2.5rem;
@@ -41,7 +42,7 @@ input {
 .search-box svg {
     stroke: var(--text)
 }
-
+/*Estilos resultados barra de búsqueda*/
 .results {
     max-height: 20rem;
     overflow-y: auto;

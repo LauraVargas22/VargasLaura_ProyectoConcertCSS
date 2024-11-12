@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Estilos body*/
 body {
     background: rgb(238,174,202);
     background: linear-gradient(300deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
@@ -11,7 +11,7 @@ body {
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
 }
-
+/* Estilos scrollbar*/
 body::-webkit-scrollbar {
     width: 0.3rem;
 }
@@ -20,12 +20,12 @@ body::-webkit-scrollbar-thumb {
     background: linear-gradient(#42275a, #734b6d);
     border-radius: 1rem;
 }
-
+/*Uso de flex en cover*/
 .body {
     display: flex;
     flex-direction: row;
 }
-
+/*Ubicación del texto en cover*/
 .body__text {
     display: flex;
     flex-direction: column;
@@ -36,13 +36,13 @@ body::-webkit-scrollbar-thumb {
 .title {
     justify-content: flex-start;
     color: #761CBC;
-    font-size: clamp(2rem, 1.1556rem + 3.5556vw, 4rem);
+    font-size: clamp(2rem, 1.1556rem + 3.5556vw, 4rem); /*Letra responsiva*/
     padding: 10vh 0 0 7vw;
 }
-
+/*Ubicación del bóton en cover*/
 .button__start {
     justify-content: flex-end;
-    font-size: clamp(1.5rem, 1.0778rem + 1.7778vw, 2.5rem);
+    font-size: clamp(1.5rem, 1.0778rem + 1.7778vw, 2.5rem); /*Letra responsiva*/
     font-weight: 500;
     text-decoration: none;
     background: #761CBC;
@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb {
     bottom: 10vh;
     left: 10vw;
 }
-
+/*Ubicación de la imágen en el cover*/
 .body__image {
     display: flex;
     flex-direction: column;
@@ -62,7 +62,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     object-fit: cover;
 }
-
+/*Tamaños de la imágen de acuerdo a la pantalla*/
 @media (min-width: 1024px) {
     .body__image {
         width: 50%;
