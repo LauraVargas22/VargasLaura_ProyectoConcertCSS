@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Importación hoja de estilos-->
     <link rel="stylesheet" href="../css/styles5.css">
+    <!--Importación icono-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back_ios"/>
+    <!--Importación libreria JsBarcode-->
     <script src="../barcode/JsBarcode.all.min.js"></script>
     <title>Tickets Concert</title>
 </head>
 <body>
     <header>
+        <!--Botón de redireccionamiento home-->
         <div class="header__bottom">
-            <button onclick="window.location.href='../index.html'" type="button" class="icon-button">
-                <span class="material-symbols-outlined">arrow_back_ios</span>
+            <!--Dirección de redireccionamiento-->
+            <button onclick="window.location.href='../home.html'" type="button" class="icon-button">
+                <span class="material-symbols-outlined">arrow_back_ios</span><!--Icono-->
             </button>
         </div>
     </header>
+    <!--Carrusel tickets-->
     <div class="tickets">
+        <!--Sección 1-->
         <div id="section1" class="ticket__item">
+            <!--Imágen evento-->
             <img class="img__ticket" src="../images/ticket1.png">
+            <!--Título y subtítulo evento-->
             <div class="ticket__title">
                 <h1 class="title__ticket">Coldplay: Music of the Spheres</h1><br>
                 <h2 class="subtitle__ticket">Nov 15 2023 - Gelora Bung Karno Stadium, Jakarta</h2>
             </div>
+            <!--Información evento-->
             <div class="body">
+                <!--Información evento parte izquierda-->
                 <div class="body__ticket">
                     <h3 class="subtitle__body">Name</h3>
                     <p class="text__body">Indryani Puspita</p>
@@ -32,6 +43,7 @@
                     <h3 class="subtitle__body">Gate</h3>
                     <p class="text__body">Yellow</p>
                 </div>
+                <!--Información evento parte derecha-->
                 <div class="body__ticket--right">
                     <h3 class="subtitle__body">Order Number</h3>
                     <p class="text__body">CLD09738PL</p>
@@ -41,18 +53,25 @@
                     <p class="text__body">West B</p>
                 </div>
             </div>
+            <!--Código de barras-->
             <div class="barra__ticket">
                 <svg id="barcode"></svg>
+                <!--Texto inferior código de barras-->
                 <p class="text__barcode">Scan your barcode at the the entry gate.</p>
             </div>
         </div>
+        <!--Sección 2-->
         <div id="section2" class="ticket__item">
+            <!--Imágen evento-->
             <img class="img__ticket" src="../images/ticket2.png">
+            <!--Título y subtítulo evento-->
             <div class="ticket__title">
                 <h1 class="title__ticket">Muse: Will of the People</h1>
                 <h2 class="subtitle__ticket">July 23 2023 - Yas Marina Circuit Abu Dhabi, Unit Arab Emirates</h2>
             </div>
+            <!--Información evento-->
             <div class="body">
+                <!--Información evento parte izquierda-->
                 <div class="body__ticket">
                     <h3 class="subtitle__body">Name</h3>
                     <p class="text__body">Indryani Puspita</p>
@@ -61,6 +80,7 @@
                     <h3 class="subtitle__body">Gate</h3>
                     <p class="text__body">Yellow</p>
                 </div>
+                <!--Información evento parte derecha-->
                 <div class="body__ticket--right">
                     <h3 class="subtitle__body">Order Number</h3>
                     <p class="text__body">CLD09738PL</p>
@@ -70,18 +90,25 @@
                     <p class="text__body">West B</p>
                 </div>
             </div>
+            <!--Código de barras-->
             <div class="barra__ticket">
                 <svg id="barcode"></svg>
+                <!--Texto inferior código de barras-->
                 <p class="text__barcode">Scan your barcode at the the entry gate.</p>
             </div>
         </div>
+        <!--Sección 3-->
         <div id="section3" class="ticket__item">
+            <!--Imágen evento-->
             <img class="img__ticket" src="../images/ticket3.png">
+            <!--Título y subtítulo evento-->
             <div class="ticket__title">
                 <h1 class="title__ticket">One Direction: Where We Are</h1><br>
                 <h2 class="subtitle__ticket">September 15 2023 - San Siro Stadium, Milan</h2>
             </div>
+            <!--Información evento-->
             <div class="body">
+                <!--Información evento parte izquierda-->
                 <div class="body__ticket">
                     <h3 class="subtitle__body">Name</h3>
                     <p class="text__body">Indryani Puspita</p>
@@ -90,6 +117,7 @@
                     <h3 class="subtitle__body">Gate</h3>
                     <p class="text__body">Yellow</p>
                 </div>
+                <!--Información evento parte derecha-->
                 <div class="body__ticket--right">
                     <h3 class="subtitle__body">Order Number</h3>
                     <p class="text__body">CLD09738PL</p>
@@ -99,21 +127,23 @@
                     <p class="text__body">West B</p>
                 </div>
             </div>
+            <!--Código de barras-->
             <div class="barra__ticket">
                 <svg id="barcode"></svg>
+                <!--Texto inferior código de barras-->
                 <p class="text__barcode">Scan your barcode at the the entry gate.</p>
             </div>
         </div>
     </div>
 </body>
 </html>
-
+<!--Estilos código de barras y uso de JavaScript-->
 <script type="text/javascript">
     JsBarcode("#barcode", "123461234", {
-        format: "codabar",
-        lineColor: "#000000",
-        width: 4,
-        height: 40,
-        displayValue: false,
+        format: "codabar", // Especifica el formato del código de barras
+        lineColor: "#000000", //Color de las líneas
+        width: 4, //Ancho de cada barra individual
+        height: 40, //Alto del código de barras
+        displayValue: false, //Indica que no se muestre el valor del código de barras
     });
 </script>

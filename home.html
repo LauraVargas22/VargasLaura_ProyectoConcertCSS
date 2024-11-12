@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Importación de las hojas de estilos-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="css/styles3.css">
+    <!--Importación de íconos-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=filter_list" />
+    <title>Concert Events</title>
+</head>
+<body>
+    <!--Header de home-->
+   <header>
+    <!--Botón de notificaciones-->
+       <div class="header__button">
+           <button type="button" class="icon-button">
+            <!-- Icono material design de notificaciones-->
+               <span class="material-icons">notifications</span>
+               <!-- Icono material design-->
+               <span class="icon-button__badge">2</span>
+            </button>
+    <!--Botón de redireccionamiento de al cover-->
+            <div class="header__button--left">
+                <!--Ruta de redireccionamiento al cover-->
+                <button onclick="window.location.href='/cover.html'" type="button" class="icon-button">
+                      <!-- Icono material design-->
+                    <span class="material-symbols-outlined">filter_list</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!--Título-->
+   <div class="title">
+    <h1>Find</h1><h1 class="title2">Trending Events</h1>
+   </div>
+   <!--Barra de búsqueda-->
+   <div class="search-box">
+        <div class="row">
+            <!--Icono de búsqueda (lupa)-->
+            <button><img src="images/hicon2.png"></button>
+            <input type="text" class="search-bar" placeholder="Search event..." autocomplete="off"> <!--Entrada de texto-->
+            <!--Icono de filtro-->
+            <button><img src="images/hicon.png"></button>
+        </div>
+        <div class="results"></div>
+   </div>
+   <script src="js/script.js"></script> <!--Importación de JavaScript-->
+   <!--Menú de categorias-->
+   <div class="barra">
+    <!--Categorias con simulación de redireccionamiento-->
+            <a class="barra__item" href="#">Music Concert</a>
+            <a class="barra__item" href="#">Exhibition</a>
+            <a class="barra__item" href="#">Stand Up Show</a>
+            <a class="barra__item" href="#">Theater</a>
+   </div>
+   <!--Trending Cards-->
+   <div class="trending">
+        <h2>Trending Events</h2>
+        <h3>See all</h3>
+    </div>
+    <!--Carrusel Trending Cards-->
+    <div class="events">
+        <!--Card 1-->
+        <div class="events__item">
+                <img class="events__image" src="images/event1.png"> <!--Imágen card 1-->
+                <!--Cuadro de texto card-->
+                <div class="image__info">
+                    <!--Redireccionamiento página details-->
+                    <a class="title__info" href="details/event1.html">Coldplay: Music of the Spheres</a>
+                    <p class="text__info"><img src="images/location.png"> Gelora Bung Karno Stadium...</p>
+                    <p class="text__info"><img src="images/date.png"> Novemeber 15 2023</p>
+                    <div class="image__info--price">
+                        <h4 class="title__info--price">Start from</h4>
+                        <p class="text__info--price">IDR1.100.000</p>
+                    </div>
+                </div>
+        </div>
+        <!--Card 2-->
+        <div class="events__item">
+            <img class="events__image" src="images/event2.png"><!--Imágen card 2-->
+            <!--Cuadro de texto card-->
+            <div class="image__info">
+                <!--Redireccionamiento página details-->
+                <a class="title__info" href="details/event2.html">Muse: Will of the People</a>
+                <p class="text__info"><img src="images/location.png"> Yas Marina Circuit Abu Dha...</p>
+                <p class="text__info"><img src="images/date.png"> July 23 2023 </p>
+                <div class="image__info--price">
+                    <h4 class="title__info--price">Start from</h4>
+                    <p class="text__info--price">IDR500.000</p>
+                </div>
+            </div>
+        </div>
+        <!--Card 3-->
+        <div class="events__item">
+            <img class="events__image" src="images/event3.png"><!--Imágen card 3-->
+            <!--Cuadro de texto card-->
+            <div class="image__info">
+                <!--Redireccionamiento página details-->
+                <a class="title__info" href="details/event3.html">One Direction: Where We Are</a>
+                <p class="text__info"><img src="images/location.png"> San Siro Stadium</p>
+                <p class="text__info"><img src="images/date.png"> September 15 2023</p>
+                <div class="image__info--price">
+                    <h4 class="title__info--price">Start from</h4>
+                    <p class="text__info--price">IDR1.100.000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Events Near You-->
+    <div class="nearyou">
+        <h2>Events Near You</h2>
+        <h3>See all</h3>
+    </div>
+    <!--Carrusel eventos cerca de usted-->
+    <div class="eventNear">
+        <!--Card 1-->
+        <div class="eventNear__item">
+            <img class="events__images" src="images/event1.png"><!--Imágen card 1-->
+            <!--Cuadro de texto card-->
+            <div class="event__info">
+                <!--Redireccionamiento página details-->
+                <a class="text__event" href="details/event1.html">Coldplay: Music of the Spheres</a>
+                <p class="text__event--p"><img src="images/location.png"> Jayarta,Indonesia <br><img src="images/date.png"> Nov 15 2023</p>
+                <p class="text__event--price"><img src="images/price.png"> IDR1.100.000</p>
+            </div>
+        </div>
+        <!--Card 2-->
+        <div class="eventNear__item">
+            <img class="events__images" src="images/event2.png"><!--Imágen card 2-->
+            <!--Cuadro de texto card-->
+            <div class="event__info">
+                <!--Redireccionamiento página details-->
+                <a class="text__event" href="details/event2.html">Muse: Will of the People</a>
+                <p class="text__event--p"><img src="images/location.png"> Unit Arab Emirates <br><img src="images/date.png"> July 23 2023</p>
+                <p class="text__event--price"><img src="images/price.png"> IDR500.000</p>
+            </div>
+        </div>
+        <!--Card 3-->
+        <div class="eventNear__item">
+            <img class="events__images" src="images/event3.png"><!--Imágen card 3-->
+            <!--Cuadro de texto card-->
+            <div class="event__info">
+                <!--Redireccionamiento página details-->
+                <a class="text__event" href="details/event3.html">One Direction: Where We Are</a>
+                <p class="text__event--p"><img src="images/location.png"> Milan, Italy <br><img src="images/date.png"> Sep 15 2023</p>
+                <p class="text__event--price"><img src="images/price.png"> IDR1.100.000</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

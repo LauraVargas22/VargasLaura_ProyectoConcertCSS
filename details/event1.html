@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Importación hoja de estilos-->
     <link rel="stylesheet" href="../css/styles4.css">
+    <!--Importación icono-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back_ios"/>
     <title>Concert Coldplay</title>
 </head>
 <body>
     <header>
         <div class="header__image">
+            <!--Imágen de encabezado-->
             <img src="../images/event1.png">
+            <!--Botón de redireccionamiento home-->
             <div class="header__bottom">
-                <button onclick="window.location.href='../index.html'" type="button" class="icon-button">
-                    <span class="material-symbols-outlined">arrow_back_ios</span>
+                <!--Dirección de redireccionamiento-->
+                <button onclick="window.location.href='../home.html'" type="button" class="icon-button">
+                    <span class="material-symbols-outlined">arrow_back_ios</span> <!--Icono-->
                 </button>
             </div>
+            <!--Cuadro de texto sobre imágen-->
             <div class="image__text">
                 <h1 class="title__text">Coldplay: </h1>
                 <p class="text__info"><img src="../images/location.png"> Gelora Bung Karno Stadium, Jakarta</p>
                 <p class="text__info"><img src="../images/date.png"> November 15 2023</p>
+                <!--Imágenes foto de perfil-->
                 <div class="info__profile">
                     <img class="profile1" src="../images/profile1.svg">
                     <img class="profile2" src="../images/profile2.svg">
@@ -31,20 +38,25 @@
     </header>
     <div class="description">
         <h2 class="description__title">Description</h2>
+        <!--Descripción evento-->
         <p class="description__text">
             Music of the Spheres (subtitled Vol. I From Earth with Love) is the ninth studio album by Coldplay, released on 15 October 2021 by Parlophone in the United Kingdom and Atlantic Records in the United States. The album is the follow-up of their 2019 album Everyday Life and was produced by Max Martin and co-produced by Oscar Holter and Bill Rahko. It features guest appearances from Selena Gomez, We Are King, Jacob Collier, and BTS. It also features returning contributions from English electronic producer Jon Hopkins, who is a long-time contributor of the band and had previously worked on their fourth studio album, Viva la Vida or Death and All His Friends. <br>
             Music of the Spheres — Coldplay's second space-themed concept album after X&Y (2005) — is set in a fictional solar system called The Spheres, which contains nine planets, three natural satellites, a star and a nebula, with each of them corresponding to a certain track on the record. According to Chris Martin, its concept and themes were inspired by the Star Wars film franchise, which made him wonder what other artists and music could be like across the universe. Musically, the album explores genres such as synth-pop, pop rock, space rock, space music, as well as ambient sensibilities.
         </p>
         <span class="read__more">Read More...</span>
     </div>
+    <!--Ubicación-->
     <div class="location">
         <h2 class="description__title">Venue and Location</h2>
+        <!--Importación mapa de la ubicación del evento desde google maps-->
         <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3413095218853!2d106.79919777433099!3d-6.218643460906362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f14d30079f01%3A0x2e74f2341fff266d!2sEstadio%20Bung%20Karno!5e0!3m2!1ses!2sco!4v1731190201402!5m2!1ses!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!--Cuadro de texto precio evento-->
         <div class="footer__map">
             <div class="image__info">
                 <h4 class="title__info">Start from</h4>
                 <p class="text__info">IDR1.100.000</p>
             </div>
+            <!--Botón de redireccionamiento a paǵina de tickets a su respectiva sección-->
             <a class="ticket" href="./ticket1.html#section1">Buy Ticket</a>
         </div>
     </div>

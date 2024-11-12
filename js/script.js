@@ -2,6 +2,9 @@ const SearchList = [
     "Trending Events",
     "Events Near You",
     "Music Concert",
+    "coldplay",
+    "Muse", 
+    "One Direction",
 ];
 
 const resultBox = document.querySelector(".results");
