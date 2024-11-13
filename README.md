@@ -1,7 +1,7 @@
 # MUSIC CONCERT
 ## Descripción:
 Este proyecto consiste en el desarrollo de una aplicación de eventos de música que permite a los usuarios conocer algunos eventos musicales, visualizando información detallada sobre ellos, para así poder acceder a los tickets de cada uno de los eventos. El proyecto se puede visualizar a través del siguiente link: 
-https://musicconcerts.netlify.app/
+https://musicalconcerts.netlify.app/
 Para la elaboración de este proyecto se tuvo en en cuenta el diseño propuesto en figma https://www.figma.com/community/file/1243768936820156796/evento-event-mobile-app, así mismo como los siguientes requerimientos:
 - La aplicación debe ser completamente navegable y responsiva, con un diseño visual atractivo y consistente. Las secciones principales deben permitir al usuario buscar (simulado con redirecciones) eventos, ver detalles, y realizar la compra de entradas sin problemas.
 - Estructura clara del proyecto, con código bien comentado y fácil de entender, siguiendo buenas prácticas de HTML, CSS y JavaScript. La lógica debe estar bien modularizada.
